@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Python: main.py",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             // set your desired program
@@ -14,6 +14,21 @@
             "env": {
                 // "PYTHONPATH": "../../"
             }
-        }
+        },
+        {
+          "name": "Python: feed-forward.py",
+          "type": "python",
+          "request": "launch",
+          "cwd": "${workspaceFolder}",
+          // set your desired program
+          "program": "${workspaceFolder}${pathSeparator}feed-forward.py",
+          // set your desired arguments
+          "args": [],
+          "console": "integratedTerminal",
+          // you can configure environment variables
+          "env": {
+              "PYTHONPATH": "/usr/local/bin/python3"
+          }
+      }
     ]
 }
