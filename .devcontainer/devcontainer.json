@@ -1,0 +1,29 @@
+{
+    "name": "Dockerfile",
+    "context": "..",
+    "dockerFile": "./Dockerfile",
+    "runArgs": [
+      // speeds up pytorch data loading
+      "--ipc=host"
+    ],
+    "mounts": [
+    ],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-azuretools.vscode-docker",
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-python.isort",
+          "ms-toolsai.jupyter",
+          "ms-toolsai.vscode-jupyter-cell-tags",
+          "ms-toolsai.jupyter-renderers",
+          "ms-toolsai.vscode-jupyter-slideshow",
+          "christian-kohler.path-intellisense",
+          "mutantdino.resourcemonitor",
+          "redhat.vscode-yaml"
+        ]
+      }
+    }
+  }
+  
